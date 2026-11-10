@@ -1,0 +1,14 @@
+# Données et modèles lourds
+data/raw/
+data/processed/
+data/photos/
+*.ply
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.zip
+outputs/
+colmap_workspace/
+.ipynb_checkpoints/
+.venv/
