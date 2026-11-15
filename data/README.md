@@ -45,3 +45,11 @@ Exécuter les notebooks du dossier `notebooks/` dans l'ordre (compatibles Colab/
 - `demo/` : application et vidéo
 - `report/` : rapport final
 - `docs/` : licences, fiche du modèle, réflexion éthique
+
+## Baseline 02 : PointNet autoencoder
+- Données : ModelNet10 (chair, table, toilet), 1024 points par objet
+- Lancement : exécuter `notebooks/02_baseline.ipynb`
+- Chamfer test : (colle ici la valeur de 02_baseline_metrics.csv)
+
+![reconstructions](results/figures/02_reconstructions.png)
+![générations](results/figures/02_generated_samples.png)

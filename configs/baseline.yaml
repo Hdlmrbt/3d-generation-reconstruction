@@ -1,0 +1,6 @@
+n_points: 1024
+latent: 128
+batch_size: 32
+epochs: 100
+lr: 0.001
+seed: 42
