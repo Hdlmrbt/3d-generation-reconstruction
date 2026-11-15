@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 
 class PointNetAE(nn.Module):
@@ -25,3 +26,7 @@ class PointNetAE(nn.Module):
     def forward(self, x):
         z = self.encode(x)
         return self.decode(z), z
+    
+    @torch.no_grad()
+    def sample(self, n, device):
+        return self.decode(torch.randn(n, self.latent, device=device))
