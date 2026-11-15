@@ -22,10 +22,6 @@ Générer des formes 3D simples (nuages de points / voxels), reconstruire un obj
 photographié avec un smartphone via Gaussian Splatting, puis réduire la taille du
 modèle et mesurer la vitesse de rendu.
 
-## Équipe
-| Nom | Rôle principal |
-|---|---|
-| | |
 
 ## Installation
 pip install -r requirements.txt
@@ -49,7 +45,7 @@ Exécuter les notebooks du dossier `notebooks/` dans l'ordre (compatibles Colab/
 ## Baseline 02 : PointNet autoencoder
 - Données : ModelNet10 (chair, table, toilet), 1024 points par objet
 - Lancement : exécuter `notebooks/02_baseline.ipynb`
-- Chamfer test : (colle ici la valeur de 02_baseline_metrics.csv)
+- Chamfer test : 0.005762139335274696
 
 ![reconstructions](results/figures/02_reconstructions.png)
 ![générations](results/figures/02_generated_samples.png)

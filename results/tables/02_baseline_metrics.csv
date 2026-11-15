@@ -1,0 +1,2 @@
+model,latent,test_chamfer
+PointNet-AE,128,0.005762139335274696
