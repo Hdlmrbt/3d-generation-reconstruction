@@ -49,3 +49,19 @@ Exécuter les notebooks du dossier `notebooks/` dans l'ordre (compatibles Colab/
 
 ![reconstructions](results/figures/02_reconstructions.png)
 ![générations](results/figures/02_generated_samples.png)
+
+## Modèle 03 : PointNet VAE
+| Modèle | Chamfer ↓ | MMD ↓ | COV ↑ |
+|---|---|---|---|
+| AE + gaussienne | 0.00576 | 0.01014 | 0.327 |
+| VAE | 0.00739 | 0.00889 | 0.387 |
+
+Le VAE reconstruit un peu moins bien mais génère des formes plus proches de la distribution réelle.
+
+![générations VAE](results/figures/03_generated_vae.png)
+![interpolation](results/figures/03_interpolation.png)
+
+# Données
+- Génération : ModelNet10 (chair, table, toilet), téléchargé par le notebook, non versionné
+- Reconstruction : N photos d'un objet [décris-le], prises au smartphone, fond [..], lumière [..]
+- Les données lourdes ne sont pas dans Git (voir .gitignore)
