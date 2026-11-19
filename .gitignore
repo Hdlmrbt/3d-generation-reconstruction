@@ -11,4 +11,5 @@ data/photos/
 outputs/
 colmap_workspace/
 .ipynb_checkpoints/
-.venv/
+.venv/photos_objet/
+*.zip
